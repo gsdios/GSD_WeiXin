@@ -1,6 +1,6 @@
 # GSD_WeiXin
 ### 朋友圈demo视频教程（上）：
-#####http://v.youku.com/v_show/id_XMTYzNzg2NzA0MA==.html
+##### http://v.youku.com/v_show/id_XMTYzNzg2NzA0MA==.html
 ## 高仿微信计划：
 ### 已经实现功能
 1.微信首页（cell侧滑编辑、下拉眼睛动画、下拉拍短视频、点击进入聊天详情界面）
