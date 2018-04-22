@@ -321,9 +321,12 @@ typedef void(^PropertyChangeBlock)(AVCaptureDevice *captureDevice);
 
 - (void)show
 {
-    if (!_captureDeviceInput) {
-        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"无法获取到后置摄像头" message:@"请退出操作" delegate:nil cancelButtonTitle:@"退出" otherButtonTitles:nil];
-        [alert show];
+    
+    if (! _captureDeviceInput) {
+        UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"无法获取到后置摄像头" message:@"请退出操作" preferredStyle: UIAlertControllerStyleAlert];
+        UIAlertAction *action = [UIAlertAction actionWithTitle:@"退出" style:UIAlertActionStyleDefault handler:nil];
+        [alert addAction:action];
+        [self presentViewController:alert animated:true completion:nil];
     }
     self.pan.enabled = YES;
     self.view.frame = [UIScreen mainScreen].bounds;
